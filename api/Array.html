@@ -20,7 +20,7 @@ and <code>a.length</code>.</p>
 <code>a == a.copy()</code> is always false.</p></div></div><div class="field "><a name="filter"></a><h3><p><code><a href="#filter"><span class="identifier">filter</span></a> (<span style="white-space:nowrap">f:<span class="type">T</span>&nbsp;&#8209;&gt;&nbsp;<span class="type">Bool</span></span>):<a class="type" title="An Array is a storage for values." href="./Array.html">Array</a>&lt;<span class="type">T</span>&gt;</code></p></h3><div class="doc"><p>Returns an Array containing those elements of <code>this</code> for which <code>f</code>
 returned true.</p>
 <p>The individual elements are not duplicated and retain their identity.</p>
-<p>If <code>f</code> is null, the result is unspecified.</p></div></div><div class="field "><a name="indexOf"></a><h3><p><code><a href="#indexOf"><span class="identifier">indexOf</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span>,</span> <span style="white-space:nowrap">?fromIndex:<span class="type">Int</span></span>):<span class="type">Int</span></code></p></h3><div class="doc"><p>Returns position of the first occurense of <code>x</code> in <code>this</code> Array, searching front to back.</p>
+<p>If <code>f</code> is null, the result is unspecified.</p></div></div><div class="field "><a name="indexOf"></a><h3><p><code><a href="#indexOf"><span class="identifier">indexOf</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span>,</span> <span style="white-space:nowrap">?fromIndex:<span class="type">Int</span></span>):<span class="type">Int</span></code></p></h3><div class="doc"><p>Returns position of the first occurrence of <code>x</code> in <code>this</code> Array, searching front to back.</p>
 <p>If <code>x</code> is found by checking standard equality, the function returns its index.</p>
 <p>If <code>x</code> is not found, the function returns -1.</p>
 <p>If <code>fromIndex</code> is specified, it will be used as the starting index to search from,
@@ -41,7 +41,7 @@ Std.string(this[1]) + sep + ... + sep + Std.string(this[this.<a href="#length">l
 <p>If <code>this</code> is the empty Array <code>[]</code>, the result is the empty String <code>""</code>.
 If <code>this</code> has exactly one element, the result is equal to a call to
 <code>Std.string(this[0])</code>.</p>
-<p>If <code>sep</code> is null, the result is unspecified.</p></div></div><div class="field "><a name="lastIndexOf"></a><h3><p><code><a href="#lastIndexOf"><span class="identifier">lastIndexOf</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span>,</span> <span style="white-space:nowrap">?fromIndex:<span class="type">Int</span></span>):<span class="type">Int</span></code></p></h3><div class="doc"><p>Returns position of the last occurense of <code>x</code> in <code>this</code> Array, searching back to front.</p>
+<p>If <code>sep</code> is null, the result is unspecified.</p></div></div><div class="field "><a name="lastIndexOf"></a><h3><p><code><a href="#lastIndexOf"><span class="identifier">lastIndexOf</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span>,</span> <span style="white-space:nowrap">?fromIndex:<span class="type">Int</span></span>):<span class="type">Int</span></code></p></h3><div class="doc"><p>Returns position of the last occurrence of <code>x</code> in <code>this</code> Array, searching back to front.</p>
 <p>If <code>x</code> is found by checking standard equality, the function returns its index.</p>
 <p>If <code>x</code> is not found, the function returns -1.</p>
 <p>If <code>fromIndex</code> is specified, it will be used as the starting index to search from,
@@ -57,10 +57,10 @@ the whole array will be searched, if it is less than 0, the function returns -1.
 remains 0.</p></div></div><div class="field "><a name="push"></a><h3><p><code><a href="#push"><span class="identifier">push</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span></span>):<span class="type">Int</span></code></p></h3><div class="doc"><p>Adds the element <code>x</code> at the end of <code>this</code> Array and returns the new
 length of <code>this</code> Array.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
-<p><code>this.<a href="#length">length</a></code> increases by 1.</p></div></div><div class="field "><a name="remove"></a><h3><p><code><a href="#remove"><span class="identifier">remove</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span></span>):<span class="type">Bool</span></code></p></h3><div class="doc"><p>Removes the first occurence of <code>x</code> in <code>this</code> Array.</p>
+<p><code>this.<a href="#length">length</a></code> increases by 1.</p></div></div><div class="field "><a name="remove"></a><h3><p><code><a href="#remove"><span class="identifier">remove</span></a> (<span style="white-space:nowrap">x:<span class="type">T</span></span>):<span class="type">Bool</span></code></p></h3><div class="doc"><p>Removes the first occurrence of <code>x</code> in <code>this</code> Array.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
 <p>If <code>x</code> is found by checking standard equality, it is removed from <code>this</code>
-Array and all following elements are reindexed acoordingly. The function
+Array and all following elements are reindexed accordingly. The function
 then returns true.</p>
 <p>If <code>x</code> is not found, <code>this</code> Array is not changed and the function
 returns false.</p></div></div><div class="field "><a name="reverse"></a><h3><p><code><a href="#reverse"><span class="identifier">reverse</span></a> ():<span class="type">Void</span></code></p></h3><div class="doc"><p>Reverse the order of elements of <code>this</code> Array.</p>
@@ -90,8 +90,8 @@ algorithm, <code>haxe.ds.ArraySort.sort()</code> can be used instead.</p>
 <p>If <code>f</code> is null, the result is unspecified.</p></div></div><div class="field "><a name="splice"></a><h3><p><code><a href="#splice"><span class="identifier">splice</span></a> (<span style="white-space:nowrap">pos:<span class="type">Int</span>,</span> <span style="white-space:nowrap">len:<span class="type">Int</span></span>):<a class="type" title="An Array is a storage for values." href="./Array.html">Array</a>&lt;<span class="type">T</span>&gt;</code></p></h3><div class="doc"><p>Removes <code>len</code> elements from <code>this</code> Array, starting at and including
 <code>pos</code>, an returns them.</p>
 <p>This operation modifies <code>this</code> Array in place.</p>
-<p>If <code>len</code> is &lt; 0 or <code>pos</code> exceeds <code>this</code>.length, the result is the empty
-Array [].</p>
+<p>If <code>len</code> is &lt; 0 or <code>pos</code> exceeds <code>this</code>.length, an empty Array [] is 
+returned and <code>this</code> Array is unchanged.</p>
 <p>If <code>pos</code> is negative, its value is calculated from the end    of <code>this</code>
 Array by <code>this.<a href="#length">length</a> + pos</code>. If this yields a negative value, 0 is
 used instead.</p>
